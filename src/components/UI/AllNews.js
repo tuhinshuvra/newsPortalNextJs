@@ -63,8 +63,10 @@ const AllNews = ({ allNews }) => {
                                 </span>
                             </p>
 
+
                             <p style={{ fontSize: "15px" }}>
-                                {news?.description.length > 100
+                                {news?.description
+                                    .length > 100
                                     ? news?.description.slice(0, 70) + "..."
                                     : news?.description}
                             </p>
